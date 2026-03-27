@@ -554,12 +554,12 @@
     class="hero-mesh min-h-screen flex flex-col justify-center pt-24 pb-16 px-5 md:px-10 relative overflow-hidden">
 
     <!-- Decorative orbs -->
-    <div class="orb-pulse absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-teal/5 blur-3xl pointer-events-none">
+    <div class="orb-pulse absolute top-1/4 right-1/4 w-64 h-64 md:w-96 md:h-96 rounded-full bg-teal/5 blur-3xl pointer-events-none">
     </div>
     <div
-      class="orb-pulse-delay absolute bottom-1/3 left-1/6 w-72 h-72 rounded-full bg-red/5 blur-3xl pointer-events-none">
+      class="orb-pulse-delay absolute bottom-1/3 left-1/6 w-48 h-48 md:w-72 md:h-72 rounded-full bg-red/5 blur-3xl pointer-events-none">
     </div>
-    <div class="orb-pulse absolute top-2/3 right-1/6 w-64 h-64 rounded-full bg-accent/4 blur-3xl pointer-events-none">
+    <div class="orb-pulse absolute top-2/3 right-1/6 w-40 h-40 md:w-64 md:h-64 rounded-full bg-accent/4 blur-3xl pointer-events-none">
     </div>
 
     <!-- Subtle grid pattern -->
@@ -667,13 +667,13 @@
             <div class="aspect-video bg-primary/60 relative">
               <iframe
                 src="https://player.vimeo.com/video/1144416916?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                width="610" height="343" frameborder="0"
+                frameborder="0" class="w-full h-full"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" title="Lean 365"></iframe>
             </div>
             <!-- Video caption badge -->
             <div
-              class="absolute -bottom-4 -right-4 bg-dark border border-white/10 rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl">
+              class="absolute bottom-2 right-2 md:-bottom-4 md:-right-4 bg-dark border border-white/10 rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl">
               <div class="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <polygon points="5,3 11,7 5,11" fill="#1AABCC" />
@@ -691,7 +691,7 @@
     </div>
 
     <!-- Enhanced animated scroll indicator -->
-    <div class="scroll-bounce absolute bottom-8 left-1/2 flex flex-col items-center gap-1 cursor-pointer"
+    <div class="scroll-bounce absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:flex flex-col items-center gap-1 cursor-pointer"
       onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
       <span class="text-xs tracking-widest uppercase text-light/30 mb-1">Scroll</span>
       <div class="flex flex-col items-center gap-0.5">
@@ -1066,7 +1066,7 @@
             <div class="aspect-video bg-primary/40">
               <iframe
                 src="https://player.vimeo.com/video/1165142912?h=cbcfd0643e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                width="610" height="343" frameborder="0"
+                frameborder="0" class="w-full h-full"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" title="Lean 365 How to Get Started"></iframe>
             </div>
